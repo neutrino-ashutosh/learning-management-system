@@ -30,4 +30,5 @@ const sendMail = async (options) => {
     };
     await transporter.sendMail(mailOptions);
 };
-exports.default = sendMail;
+const _default = sendMail;
+export { _default as default };
