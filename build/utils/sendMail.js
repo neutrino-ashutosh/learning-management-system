@@ -10,9 +10,8 @@ const path_1 = __importDefault(require("path"));
 const sendMail = async (options) => {
     const transporter = nodemailer_1.default.createTransport({
         host: process.env.SMTP_HOST,
-        port: parseInt(process.env.SMTP_PORT || '465'),
+        port: parseInt(process.env.SMTP_PORT || '587'),
         service: process.env.SMTP_SERVICE,
-        secure: true,
         auth: {
             user: process.env.SMTP_MAIL,
             pass: process.env.SMTP_PASSWORD,
