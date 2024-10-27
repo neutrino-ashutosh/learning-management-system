@@ -21,7 +21,7 @@ app.use(cookieParser());
 // cors => cross origin resource sharing
 app.use(
   cors({
-    origin: ["https://learning-management-system-client-nu.vercel.app"],
+    origin: ["https://www.dasinaq.com"],
     credentials: true,
   })
 );
